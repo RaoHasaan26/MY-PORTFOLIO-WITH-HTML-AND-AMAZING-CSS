@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HASAAN PORTFOLIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    /* Reset some default styling */
+body, h1, h2,  h3, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: url('https://cdn.britannica.com/30/199930-131-B3D1D347/computer.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header{ margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50;
+    background:url(https://cdn.britannica.com/30/199930-131-B3D1D347/computer.jpg);
+}
+
+
+.container  {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.welcome-text {
+    display: inline-block;
+    padding-left: 100%;
+    font-size: 2em;
+    color: #f8fafa;
+    animation: slide-in 10s linear infinite;
+    font-style:oblique;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#skills {
+    text-align: center;
+    padding: 20px;
+}
+.image-container {
+            width: 100%;
+            max-width: 900px; /* Adjust the maximum width as needed */
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 20px;
+        }
+        .image-container h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-style: italic;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+        .image-container ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            justify-content: space-between; /* Distributes space evenly between items */
+        }
+        .image-container li {
+            width: 32%; /* Ensures three items per row with some spacing */
+            margin-bottom: 20px;
+        }
+        .image-container a {
+            text-decoration: none;
+            color: #000; /* Link color */
+            text-align: center;
+            display: block;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease; /* Animation for hover effect */
+        }
+        .image-container img {
+            width: 100%; /* Makes the image take up full width of its container */
+            height: 200px; /* Fixed height */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 5px;
+        }
+        .image-container a div {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .image-container a:hover {
+            transform: scale(1.05); /* Slightly increase size on hover */
+            border-color: #333; /* Darken border on hover */
+        }
+        .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skill img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.skill h3 {
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.skill p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+.skill-heading-logo {
+    width: 500px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.skill-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #6c63ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f4f4f9;
+    max-width: 200px;
+}
+
+.skill-item i {
+    margin-right: 8px;
+    color: #6c63ff;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #6c63ff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(71, 62, 62, 0.8);
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+.project-image {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 7px;
+    border: 1px solid #2c2b2b;
+    vertical-align: middle;
+}
+
+/* Flexbox for about and skills sections */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text, .skills-list {
+    width: 55%;
+}
+
+.about-image, .skills-image {
+    width: 40%;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.skills-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="welcome-text">
+              <h1> WELCOME TO RAO HASAAN PORTFOLIO </h1>
+            </div>
+        </div>
+</header>
+
+    <section id="about" class="flex-container">
+        <div class="about-text">
+            <u><h2>About</h2></u>
+            <p><i>Hello! I'm Rao Hasaan, an aspiring web developer passionate about creating dynamic and user-friendly web applications. I have recently completed a comprehensive IT course under the Governor's Initiative, where I learned the fundamentals of web development, including HTML, TypeScript, and JavaScript. My journey in coding started with a desire to bring ideas to life on the web, and I am constantly exploring new tools and frameworks to enhance my skills.</i></p>
+        </div>
+        <div class="about-image">
+            <img src="https://images.playground.com/08e480c7f70b4d598d523f709d3292ee.jpeg" alt="Developer Image">
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png" alt="HTML">
+                <h3>HTML</h3>
+                <p>Experienced in creating semantic HTML5 structures.</p>
+            </div>
+            <div class="skill">
+                <img src="https://static-00.iconduck.com/assets.00/file-type-css-icon-902x1024-dqy5inwy.png" alt="CSS">
+                <h3>CSS</h3>
+                <p>Skilled in crafting responsive designs using CSS3 and frameworks like Bootstrap.</p>
+            </div>
+            <div class="skill">
+                <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/original/javascript-logo-javascript-icon-transparent-free-png.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Proficient in JavaScript and modern libraries like React and Angular.</p>
+            </div>
+            <div class="skill">
+                <img src="https://img.freepik.com/premium-vector/web-developer-logo-template_674356-207.jpg" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>Experienced in building full-stack applications using various technologies.</p>
+            </div>
+            <div class="skill">
+                <img src="https://img.freepik.com/premium-photo/web-design-is-shown-with-words-web-design-it_939033-77840.jpg" alt="Web Design">
+                <h3>Web Design</h3>
+                <p>Skilled in creating visually appealing and user-friendly web designs.</p>
+            </div>
+            <!-- Add more skills here -->
+        </div>
+    </section>
+
+    <section id="projects" class="image-container">
+       <U><i> <h2>PROJECT</h2></i></u> <br>
+        <ul>
+            <li>
+                
+                <a href="file:///C:/typescript/PORTFOLIO/calculator%20with%20css%20and%20html/index.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNbHqki23O4B1uKZRvfFM13OothzKnuVcjaA&s" alt="Calculator Project" class="project-image">
+                 <div>   Calculator</div>
+                </a>
+            </li>
+            <li>
+                <a href="file:///C:/typescript/login%20page/index.html">
+                    <img src="https://img.freepik.com/free-vector/login-form-design-with-face_23-2147726967.jpg" alt="Login Page Project" class="project-image">
+                    <div> Login Page</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/RaoHasaan26/CURRENCY-CONVERTER">
+                    <img src="https://media.licdn.com/dms/image/D4D12AQFq9CAlVcXr3g/article-cover_image-shrink_720_1280/0/1673980988900?e=2147483647&v=beta&t=g_VjCi_pbE-J4RQRh6xAUZsWh3HQ6jVpIJaw4tEsFaE" alt="Currency Converter Project" class="project-image">
+                    <div>Currency Converter </div>
+                </a>
+            </li>
+            
+        
+            <li>
+                <a href="https://github.com/RaoHasaan26/Guess-Number-">
+                    <img src="https://easyshiksha.com/online_courses/assets/games/number-guessing/images/banner.png" alt="Guessing Number Game Project" class="project-image">
+                   <div> Guessing Number Game </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/RaoHasaan26/BMI-CALCULATOR">
+                    <img src="https://play-lh.googleusercontent.com/iIM3HsmRvokAo4Y2ySyZAXLN0bNPdXKsIHcg9bSvuwJiiPSH8QLnfxS_Z40XJ7HaT04H" alt="BMI Calculator Project" class="project-image">
+                  <div>  BMI Calculator </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/RaoHasaan26/ATM-MACHINE">
+                    <img src="https://i.ytimg.com/vi/9pCgM084czE/maxresdefault.jpg" alt="ATM Machine Code Project" class="project-image">
+                    <div>ATM Machine </div>
+                </a>
+            
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <b><u><h2>CONTACT</h2></b></u>
+        <ul>
+           <u> <li>Email </u>: <a href="mailto:raohasaan893@gmail.com">raohasaan893@gmail.com</a></li>
+            <u><li>LinkedIn </u>: <a href="https://www.linkedin.com/in/rao-hasaan-8ba040304?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bnedv6BR4Spa7CsNYucGh1Q%3D%3D" target="_blank">LinkedIn Profile</a></li>
+            <u><li>GitHub </u>: <a href="https://github.com/RaoHasaan26" target="_blank">GitHub Profile</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rao Hasaan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
